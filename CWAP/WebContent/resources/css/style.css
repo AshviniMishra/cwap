@@ -1,0 +1,197 @@
+<style>
+	/* Remove the navbar's default margin-bottom and rounded borders */
+	.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+/* .navbar-default {
+      margin-bottom: 0;
+      border-radius: 0; 
+      padding-top: 0px; 
+      padding-bottom: 0px; 
+      height:15px;
+     
+    } */
+nav {
+	background-color: black;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+	height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+	padding-top: 20px;
+	background-color: #f1f1f1;
+	height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+/* .footer {
+      background-color: #ad7fa8;
+      color: white;
+      font-style: italic;	
+    } */
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {
+		height: auto;
+	}
+}
+
+.bg-4 {
+	background-color: #2f2f2f;
+	color: #ffffff;
+}
+
+.bg-2 {
+	background-color: #474e5d;
+	color: #ffffff;
+}
+
+.footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* <------------------------------------------------------------------------------------------------------------------> */
+#page-header {
+	background-color: #7FA99B;
+	margin-top: 5px;
+	border
+}
+
+* /
+#header-logo>a>img {
+	height: 120px;
+	width: 60px;
+}
+/* media print */
+@media print {
+	/* .form-group {
+margin-bottom: 0 !important;
+} */
+	a[href]:after {
+		content: none !important;
+	}
+	h1 {
+		font-size: 1.75em !important;
+	}
+	h2 {
+		font-size: 1.5em !important;
+	}
+	h3 {
+		font-size: 1.25em !important;
+	}
+	h4.panel-title {
+		font-size: 1em !important;
+	}
+	body {
+		font-size: medium !important;
+	}
+
+	/* * {
+   margin: 0 !important;
+ } */
+	.col-xs-3, .col-xs-4 {
+		padding-right: 0 !important;
+	}
+	#header-logo>a>img {
+		height: 200px !important;
+		width: 72px !important;
+	}
+	#header-content {
+		padding-top: 10px !important;
+		margin-left: -40px !important;
+	}
+	#header-content>h1, #header-content>h2 {
+		text-align: center !important;
+	}
+	#page-header {
+		border-bottom: 1px black solid !important;
+	}
+	.content-h2, .sidepane {
+		display: none !important;
+	}
+	.contentBody {
+		border-width: 0 0 0 0px !important;
+		border-color: white !important;
+		width: 100% !important;
+	}
+	.col-xs-12 {
+		padding: 0px;
+	}
+	.col-xs-4 {
+		width: 25% !important;
+	}
+	.col-xs-8 {
+		width: 75% !important;
+	}
+	.col-xs-3 {
+		padding: 0px !important;
+		width: 25% !important;
+	}
+	.col-xs-9 {
+		padding: 0px !important;
+		width: 75% !important;
+		vertical-align: middle !important;
+	}
+	a[href='viewAdmissionForm.html'] {
+		display: none !important;
+	}
+	.form-control-static {
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+		margin-bottom: 0 !important;
+		min-height: 0px !important;
+	}
+	.alert {
+		display: none !important;
+	}
+	.finger-print {
+		display: block !important;
+	}
+	#print {
+		display: none !important;
+	}
+	.page {
+		page-break-after: always;
+		page-break-inside: avoid;
+	}
+	.choices-div {
+		page-break-inside: avoid;
+	}
+	.glyphicon-ok {
+		display: inline-block !important;
+	}
+	.download-doc-ico {
+		display: none !important;
+	}
+}
+
+/* added for removing 'no file selected' message appear on file select tag */
+.btn-bs-file {
+	position: relative;
+}
+
+.btn-bs-file input[type="file"] {
+	position: absolute;
+	z-index: -9999999;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+	width: 0;
+	height: 0;
+	outline: none;
+	cursor: inherit;
+}
+
+.form-horizontal .form-group {
+	margin-right: 0px !important;
+}
+</style>

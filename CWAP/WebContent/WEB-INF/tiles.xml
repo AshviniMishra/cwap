@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/jsp/header.jsp" />
+		<put-attribute name="hNavbar" value="/WEB-INF/views/jsp/hNavbar.jsp" />
+		<put-attribute name="hNavWelcome" value="/WEB-INF/views/jsp/hNavWelcome.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="welcome" extends="base.definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/welcome.jsp" />
+	</definition>
+
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/home.jsp" />
+	</definition>
+
+	<definition name="register" extends="base.definition">
+		<put-attribute name="title" value="Registration" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/register.jsp" />
+	</definition>
+
+	<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/login.jsp" />
+	</definition>
+	<definition name="profile" extends="base.definition">
+		<put-attribute name="title" value="Profile" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/profile.jsp" />
+	</definition>
+	<definition name="editProfile" extends="base.definition">
+		<put-attribute name="title" value="Edit Profile" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/editProfile.jsp" />
+	</definition>
+	<definition name="createSubject" extends="base.definition">
+		<put-attribute name="title" value="Create Subject" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/createSubject.jsp" />
+	</definition>
+	<definition name="createCategory" extends="base.definition">
+		<put-attribute name="title" value="Create Category" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/createCategory.jsp" />
+	</definition>
+
+	<definition name="createQualification" extends="base.definition">
+		<put-attribute name="title" value="Create Qualification" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/createQualification.jsp" />
+	</definition>
+
+	<!-- Course Tiles Starts Here -->
+
+	<definition name="createCourse" extends="base.definition">
+		<put-attribute name="title" value="Create Course" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/createCourse.jsp" />
+	</definition>
+
+	<definition name="courses" extends="base.definition">
+		<put-attribute name="title" value="Courses" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/courses.jsp" />
+	</definition>
+	<definition name="course" extends="base.definition">
+		<put-attribute name="title" value="Course" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/course.jsp" />
+	</definition>
+
+	<definition name="myCourses" extends="base.definition">
+		<put-attribute name="title" value="My Courses" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/myCourses.jsp"></put-attribute>
+	</definition>
+
+	<definition name="courseDetails" extends="base.definition">
+		<put-attribute name="title" value="Details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/coursedetails.jsp" />
+	</definition>
+
+	<definition name="updateCourse" extends="base.definition">
+		<put-attribute name="title" value="Update Course" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/updateCourse.jsp" />
+	</definition>
+
+	<!-- Course Tiles End Here -->
+
+	<definition name="enroll" extends="base.definition">
+		<put-attribute name="title" value="Enrollment" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/enroll.jsp" />
+	</definition>
+
+	<definition name="contactus" extends="base.definition">
+		<put-attribute name="title" value="Contact Details" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/contact.jsp"></put-attribute>
+
+	</definition>
+
+	<definition name="errors">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/WEB-INF/views/errorpages/404.jsp"></put-attribute>
+	</definition>
+
+	<!-- Payment Tiles -->
+	<definition name="payment" extends="base.definition">
+		<put-attribute name="title" value="Payment" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/payment.jsp" />
+	</definition>
+
+	<!-- Attendee Layout <definition name="base.definition" template="/WEB-INF/views/jsp/AttendeeLayout.jsp"> 
+		<put-attribute name="title" value="" /> <put-attribute name="header" value="/WEB-INF/views/jsp/header.jsp" 
+		/> <put-attribute name="hNavbar" value="/WEB-INF/views/jsp/hNavbar.jsp" /> 
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" /> <put-attribute 
+		name="body" value="" /> <put-attribute name="footer" value="/WEB-INF/views/jsp/footer.jsp" 
+		/> </definition> -->
+</tiles-definitions> 

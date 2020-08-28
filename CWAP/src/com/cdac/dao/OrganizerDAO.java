@@ -1,0 +1,27 @@
+package com.cdac.dao;
+
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.cdac.model.Course;
+import com.cdac.model.GeneralObject;
+
+public interface OrganizerDAO {
+
+	boolean saveSubject(GeneralObject subject);
+
+	boolean saveQualification(GeneralObject qualification);
+
+	boolean saveCategory(GeneralObject category);
+
+	void getSubjects(HttpServletRequest req, HttpServletResponse res);
+
+	boolean saveCourse(Course course, Map<String, String> categoryFees, HttpServletRequest req, HttpServletResponse res);
+
+	void getCategories(HttpServletRequest req, HttpServletResponse res);
+
+	
+
+}
